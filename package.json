@@ -57,7 +57,9 @@
     "dist": "npm install && npm run clean && npm run build && build",
     "dist:all": "npm run dist -- -mlw",
     "flow": "flow",
-    "diagnostics": "scripts/kernelspecs-diagnostics.js"
+    "diagnostics": "scripts/kernelspecs-diagnostics.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "build": {
     "electronVersion": "1.4.14",
@@ -165,7 +167,8 @@
     "vega": "^2.6.3",
     "vega-embed": "^2.2.0",
     "vega-lite": "^1.3.1",
-    "yargs": "^6.4.0"
+    "yargs": "^6.4.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
@@ -208,5 +211,6 @@
     "source-map-support": "^0.4.6",
     "watch": "^1.0.0",
     "webpack": "^1.13.3"
-  }
+  },
+  "snyk": true
 }
