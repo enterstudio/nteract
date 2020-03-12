@@ -139,7 +139,7 @@
     "leaflet": "^1.0.1",
     "lodash": "^4.17.2",
     "mathjax-electron": "^1.2.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.0",
     "moment": "^2.15.2",
     "normalize.css": "^5.0.0",
     "nteract-assets": "^2.1.0",
